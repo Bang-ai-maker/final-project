@@ -11881,8 +11881,14 @@ textarea.form-control-lg {
 }
 
 .carousel-caption {
-  top: 1rem;
+  top: 6rem;
   right: auto;
+  text-align: left;
+}
+
+.display-1 {
+  width: 70%;
+  font-weight: 400;
 }
 
 .card {

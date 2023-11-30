@@ -48,8 +48,14 @@ transform: scaleX(-1);
 }
 
 .carousel-caption {
-    top: 1rem;
+    top: 6rem;
     right: auto;
+    text-align: left;
+}
+
+.display-1 {
+    width: 70%;
+    font-weight: 400;
 }
 
 .card {
