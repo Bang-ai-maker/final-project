@@ -11872,6 +11872,23 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.carousel-indicators [data-bs-target] {
+  height: 0px;
+  background-color: none;
+  bottom: 5rem;
+}
+
+span.material-symbols-outlined {
+  display: block;
+  text: align;
+  font-size: 1rem;
+  color: white;
+}
+
+.carousel-indicators li {
+  list-style-type: circle;
+}
+
 .carousel-item {
   max-height: 60vh;
 }
