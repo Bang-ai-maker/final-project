@@ -11900,4 +11900,17 @@ textarea.form-control-lg {
   flex-wrap: nowrap;
 }
 
+.nb {
+  display: flex;
+  justify-content: center;
+}
+
+.bar {
+  display: flex;
+}
+
+.navbar {
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=custom.css.map */

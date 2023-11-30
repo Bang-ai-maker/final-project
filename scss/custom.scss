@@ -1,6 +1,7 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
 
+
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
   $font-family-base: "Roboto", sans-serif;
@@ -64,4 +65,18 @@ transform: scaleX(-1);
     gap: 1rem;
     --bs-gutter-x: 0;
     flex-wrap: nowrap;
+}
+
+.nb{
+    display: flex;
+    justify-content: center;
+}
+
+.bar {
+    display: flex;
+
+}
+
+.navbar {
+    flex-direction: column;
 }
