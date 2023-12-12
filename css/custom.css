@@ -11934,4 +11934,56 @@ span.material-symbols-outlined {
   flex-direction: column;
 }
 
+.discover-cards {
+  position: relative;
+}
+
+.discover-cards .container {
+  margin: 0 auto;
+}
+
+.discover-cards::after {
+  background-color: #FD9843;
+  content: "";
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: -100px;
+  height: 150%;
+  width: 100%;
+  z-index: -1;
+}
+
+.discover-cards .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.love-list-img {
+  object-position: right;
+}
+
+.icons img {
+  width: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .discover-cards .container {
+    flex-wrap: wrap;
+  }
+  .discover-cards .container .card {
+    width: calc(50% - 0.5rem);
+    flex: unset;
+  }
+}
+@media screen and (max-width: 480px) {
+  .discover-cards .container {
+    flex-direction: column;
+  }
+  .discover-cards .container .card {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=custom.css.map */

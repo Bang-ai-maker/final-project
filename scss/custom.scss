@@ -2,18 +2,18 @@
 // Option A: Include all of Bootstrap
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-  $font-family-base: "Roboto", sans-serif;
-  $font-size-base: 1rem;
-  $line-height-base: 1.6; 
+$font-family-base: "Roboto", sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6; 
 
-    $h1-font-size: 4.002rem;
-    $h2-font-size: 3.176rem;
-    $h3-font-size: 2.52rem;
-    $h4-font-size: 2rem;
-    $h5-font-size: 1.588rem;
-    $h6-font-size: 1.26rem;
+$h1-font-size: 4.002rem;
+$h2-font-size: 3.176rem;
+$h3-font-size: 2.52rem;
+$h4-font-size: 2rem;
+$h5-font-size: 1.588rem;
+$h6-font-size: 1.26rem;
 
 $spacer: 1rem;
 $spacers: (
@@ -100,4 +100,57 @@ transform: scaleX(-1);
 
 .navbar {
     flex-direction: column;
+}
+
+.discover-cards {
+    position: relative;
+}
+
+.discover-cards .container {
+    margin: 0 auto;
+}
+
+.discover-cards::after {
+    background-color: #FD9843;
+    content: "";
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: -100px;
+    height: 150%;
+    width: 100%;
+    z-index: -1;
+}
+
+.discover-cards .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.love-list-img {
+    object-position: right;
+}
+
+.icons img {
+    width: 40px;
+}
+
+@media screen and (max-width: 992px) {
+    .discover-cards .container {
+        flex-wrap: wrap;
+    }
+    .discover-cards .container .card {
+        width: calc(50% - 0.5rem);
+        flex: unset;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .discover-cards .container {
+        flex-direction: column;
+    }
+    .discover-cards .container .card {
+        width: 100%;
+    }
 }
