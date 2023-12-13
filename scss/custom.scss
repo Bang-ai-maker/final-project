@@ -82,6 +82,10 @@ transform: scaleX(-1);
     flex: auto;
 }
 
+.card {
+    padding-bottom: 3;
+}
+
 .row {
     gap: 1rem;
     --bs-gutter-x: 0;
